@@ -1,0 +1,13 @@
+const express=require("express");
+const { getAllRecipes, getDetailsById, addCategory, addRecipe, updateRecipe, deleteRecipe, getDetailsByTime, getRecipessByUseId, getRecipesByUseId } = require("../controller/recipes.controller");
+const { auth } = require("../middlewares/auth");
+const router=express.Router();
+router.get("/",getAllRecipes);
+router.get("/:id", getDetailsById);
+router.get("/getDetailsByTime/:time",getDetailsByTime );
+router.get("/getRecipesByUseId/:id",getRecipesByUseId );
+router.post("/addCategory",addCategory);
+router.post("/addRecipe",auth,addRecipe);
+router.put("/:id",auth, updateRecipe);
+router.delete("/:id",auth,deleteRecipe);
+module.exports=router;
