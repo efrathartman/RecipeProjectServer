@@ -2,7 +2,7 @@
 const mongoose=require('mongoose');
 const minimalRecipe=new mongoose.Schema({
     id:{type:Number},
-    name:{type:String},
+    recipename:{type:String},
     image:{type:String},
 })
 const categorySchema=new mongoose.Schema({

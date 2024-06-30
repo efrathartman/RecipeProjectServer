@@ -26,7 +26,7 @@ exports.getAllCategoryByRecipes=async (req,res,next)=>{
 
     try{
         const category=await Category.findOne({ description: name })
-        .populate('recipes')
+        .populate('recipesOfCategory')
         .select('-__v');
         return res.json(category)
     }

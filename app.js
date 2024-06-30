@@ -6,13 +6,13 @@ const recipeRouter=require("./routes/recipe.route");
 const categoryRouter=require("./routes/category.route")
 const { PageNotFound, serverNotFound } = require("./middlewares/handleErrors");
 
-require('dotenv').config();
-require('./config/db');
-const app=express();
-app.use(express.json());
-app.use(express.urlencoded({extended:true}));
-app.use(morgan("dev"));
-app.use(cors());
+require('dotenv').config();// טעינת קובץ הגדרות environment (.env)
+require('./config/db');// קריאה לקובץ המכיל את ההגדרות של מסד הנתונים
+const app=express();// יצירת אפליקציה חדשה באמצעות Express
+app.use(express.json());// שימוש ב- middleware של Express עבור המרה של JSON
+app.use(express.urlencoded({extended:true}));//שימוש ב- middleware של Express עבור המרה של נתונים מסוג URL-encoded
+app.use(morgan("dev"));// שימוש ב- middleware של Morgan עם פורמט "dev" להצגת לוגים בצורה קצרה
+app.use(cors());// שימוש ב- middleware של Cors עבור ניהול CORS בין שרתים
 app.get('/',(req,res)=>{
     res.send("wellcome");
 })
