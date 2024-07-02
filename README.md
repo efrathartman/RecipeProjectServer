@@ -40,7 +40,6 @@ Create a `.env` file in the root directory of your project and add the following
 | [http://localhost:5000/recipes/getDetailsByTime/:time](http://localhost:5000/recipes/getDetailsByTime/:time) | GET  | Get recipes by time  | -|{time} | - | - | - |recipes by time|200|
 | [http://localhost:5000/recipes/addRecipe](http://localhost:5000/recipes/addRecipe) | POST | add recipe  |admin /user | -|-|{ recipe}|token| new recipe added|204| 
 | [http://localhost:5000/recipes/:id](http://localhost:5000/recipes/:id) | PUT | update recipe by id |admin/ user|{id}|-|{update recipe}|token| recipe updated|204|
-
 | [http://localhost:5000/recipes/:id](http://localhost:5000/recipes/:id) | DELETE |   delete reipe by id | admin/ user |{id}|-|-|token|-|204|
 ### Categories Resource
 
