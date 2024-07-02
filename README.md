@@ -28,8 +28,7 @@ Create a `.env` file in the root directory of your project and add the following
 | [http://localhost:5000/users/signin](http://localhost:5000/users/signin) | POST   | User sign in|-|-|-|{email,password}|-|user+token| 204|
 | [http://localhost:5000/users/signup](http://localhost:5000/users/signup) | POST   | User sign up|-|-|-|{username,email,password,address,role}|-| User+token|204|
 | [http://localhost:5000/users](http://localhost:5000/users)| GET    | Get all users|  admin|-|-|-|token|all user | 200|
-|[http://localhost:5000/users/isEnabelad](http://localhost:5000/users/isEnabelad)|GET|get userid|-|-|-|
-token|userid|200|
+|[http://localhost:5000/users/isEnabelad](http://localhost:5000/users/isEnabelad)|GET|get userid|-|-|-|token|userid|200|
 
 ### Recipes Resource
 
