@@ -47,7 +47,7 @@ token|userid|200|
 
 | URL  | Method | Description | Permissions | Parameters | Optional Parameters | Body | Headers | Returns | Status Codes |
 | ---------------------------------------------------------------- | ------ | -------------------------------- | --------------- | ------------------- | ------------------- | ------------------ | --------------- | ------- | ------------ |
-| [http://localhost:5000/categories](http://localhost:5000/categories) | GET | Get all categories|everyone|-|-|-|all|all categories|200|        
+| [http://localhost:5000/categories](http://localhost:5000/categories) | GET | Get all categories|everyone|-|-|-|-|all categories|200|        
 | [http://localhost:5000/categories/getAllCategoryByRecipes/:name](http://localhost:5000/categories/getAllCategoryByRecipes/:name) | GET |  get all recipes by category name |everyone | {name} |-|-|-|all recipes by category name | 200     |
 | [http://localhost:5000/categories/:id](http://localhost:5000/categories/:id) | GET    | get category by id with recipe| everyone |{id}|-|-|-|category by id with recipes |200|
 ```
